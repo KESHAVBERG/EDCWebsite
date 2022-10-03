@@ -1,9 +1,13 @@
+body {
+  display:flex; flex-direction:column; justify-content:center;
+  min-height:100vh;
+}
 
 .word {
     font-family: 'Anton';
     /* perspective: 1000px;  */
     padding-top: 40px;
-    padding-left: 40px;
+    /* padding-left: 40px; */
   }
   
   .word span {
