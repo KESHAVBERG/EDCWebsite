@@ -3,17 +3,19 @@
 }
 
 
-#myVideo {
-    position: absolute;
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
-
 .viewport-header {
-    position: relative;
     height: 100vh;
+    color: #df3c3c;
     width: 100%;
     text-align: center;
     align-items: center;
@@ -21,16 +23,53 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    opacity: 0.7;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-transform: uppercase;
+    /* opacity: 0.7; */
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.viewport-header:before,
+.viewport-header:after {
+    display: block;
+    content: " ";
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: -400px;
+    transform-origin: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+}
+
+.viewport-header:before {
+    background-image: url('https://image.ibb.co/dwBeKk/circle_inner.png');
+    /* background-size: 100% auto; */
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.viewport-header:after {
+    background-image: url('https://image.ibb.co/gTN8C5/circle_outer.png');
+    background-size: 100% auto;
+    /* animation:'rotate 80s infinite linear'; */
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+
 }
 
 ::-webkit-scrollbar {
     width: 0px;
-  }
+}
 
-  .carousel {
+.carousel {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -41,27 +80,109 @@
     transform-style: preserve-3d;
     -webkit-transform-origin: 0% 50%;
     transform-origin: 0% 50%;
-  }
+}
 
 
 
-  .tabs .indicator {
+.tabs .indicator {
     background-color: greenyellow;
 }
 
-.tabs .tab a:focus, .tabs .tab a:focus.active {
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
     background-color: rgba(255, 255, 255, 0.2);
     outline: none;
 }
 
 
-.mvsection{
-padding-left:30px ;
-padding-right:30px ;
+.mvsection {
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
 
 
-.tabs{
+.tabs {
     padding-left: 20px;
+}
+
+@media only screen and (max-width: 1032px) {
+    .viewport-header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .viewport-header:before,
+.viewport-header:after {
+    display: block;
+    content: " ";
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: -400px;
+    
+}
+}
+
+@media only screen and (max-width: 986px) {
+    .viewport-header {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media only screen and (max-width: 805px) {
+    .viewport-header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 666px) {
+    .viewport-header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .viewport-header:before,
+.viewport-header:after {
+    display: block;
+    content: " ";
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: -350px;
+   
+}
+}
+
+@media only screen and (max-width: 393px) {
+    .viewport-header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .viewport-header h6{
+        font-size: 13px;
+    }
+    .viewport-header h1{
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 220px) {
+    .viewport-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .viewport-header h6{
+        font-size: 13px;
+    }
+    .viewport-header h1{
+        font-size: 35px;
+    }
+
 }
