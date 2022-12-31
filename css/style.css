@@ -1,69 +1,47 @@
 * {
     margin: 0px;
+    padding: 0px;
 }
 
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0)
-    }
-
-    100% {
-        transform: rotate(360deg)
-    }
+.nav-wrapper{
+    margin: 0;
 }
 
-.viewport-header {
-    height: 100vh;
-    color: #df3c3c;
-    width: 100%;
-    text-align: center;
+header h1,h6{
+    padding: 0;
+    margin-top: 0;
+    height: 20vh;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    /* opacity: 0.7; */
-    padding-left: 300px;
-    padding-right: 300px;
-}
-
-.viewport-header:before,
-.viewport-header:after {
-    display: block;
-    content: " ";
-    width: 700px;
-    height: 700px;
-    position: absolute;
-    margin-top: -400px;
-    margin-left: -400px;
-    transform-origin: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 50;
-    top: 50%;
-    left: 50%;
-}
-
-.viewport-header:before {
-    background-image: url('https://image.ibb.co/dwBeKk/circle_inner.png');
-    /* background-size: 100% auto; */
-    animation-name: rotate;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-}
-
-.viewport-header:after {
-    background-image: url('https://image.ibb.co/gTN8C5/circle_outer.png');
-    background-size: 100% auto;
-    /* animation:'rotate 80s infinite linear'; */
-    animation-name: rotate;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-
+    text-align: center;
 
 }
+
+header h6{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0px;
+}
+
+header h1{
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 0px;
+
+}
+.no-shadows {
+    box-shadow: none!important;
+}
+
+
+
+
+.transparentBG {
+    background-color: rgba(0,0,0,0);
+  }
+
+
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -106,86 +84,7 @@
     padding-left: 20px;
 }
 
-@media only screen and (max-width: 1032px) {
-    .viewport-header {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-    .viewport-header:before,
-.viewport-header:after {
-    display: block;
-    content: " ";
-    width: 700px;
-    height: 700px;
-    position: absolute;
-    margin-top: -400px;
-    margin-left: -400px;
-    
-}
-}
 
-@media only screen and (max-width: 986px) {
-    .viewport-header {
-        padding-left: 140px;
-        padding-right: 140px;
-    }
-}
-
-@media only screen and (max-width: 805px) {
-    .viewport-header {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
-
-
-@media only screen and (max-width: 666px) {
-    .viewport-header {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .viewport-header:before,
-.viewport-header:after {
-    display: block;
-    content: " ";
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    margin-top: -350px;
-    margin-left: -350px;
-   
-}
-}
-
-@media only screen and (max-width: 393px) {
-    .viewport-header {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .viewport-header h6{
-        font-size: 13px;
-    }
-    .viewport-header h1{
-        font-size: 35px;
-    }
-
-}
-
-@media only screen and (max-width: 220px) {
-    .viewport-header {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .viewport-header h6{
-        font-size: 13px;
-    }
-    .viewport-header h1{
-        font-size: 35px;
-    }
-
-}
 
 .gallery-div{
     padding-left: 50px;

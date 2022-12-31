@@ -7,17 +7,38 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Document</title>
     <script src="https://kit.fontawesome.com/20bfb18169.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- <video autoplay muted loop id="myVideo">
-        <source src="./videos/v2.mov" type="video/mp4">
-    </video> -->
+ 
 
-    <header class="viewport-header section">
-        <h1 class="">
+    <header class="viewport-header black">
+        <nav class="transparentBG z-index-0 no-shadows">
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">About</a></li>
+                    <li><a href="badges.html">Gallery</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">About</a></li>
+            <li><a href="badges.html">Gallery</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+
+        <h1 class="white-text" style="">
             EDC<span>-REC</span>
         </h1>
         <h6 class="white-text">The Entrepreneurship Development Cell of Rajalakshmi Engineering College is an initiative
@@ -25,8 +46,8 @@
             intend to create a legacy that inspires others to dream more, do more, become more, and strive to work
             together, toward the beneficial and economic growth of our independent nation.
         </h6>
-        </div>
     </header>
+
     <section class="section container mvsection">
         <div class="row ">
             <div class="col offset-l3 s12 ">
@@ -142,6 +163,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/index.js"> </script>
     <script src="./js/tabs.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    </script>
 </body>
 
 </html>
