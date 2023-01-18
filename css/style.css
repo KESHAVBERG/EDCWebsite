@@ -1,112 +1,159 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-
-.nav-wrapper{
-    margin: 0;
+.nav-wrapper {
+  margin: 0;
 }
 
-header{
-    padding: 0;
-    margin-top: 0;
-    height: 100vh;
-    text-align: center;
-    display: flex;
+header {
+  padding: 0;
+  margin-top: 0;
+  height: 100vh;
+  text-align: center;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url(../imgs/pbg.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header span{
-    font-size: 40px;
+header span {
+  font-size: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-weight: bold;
 }
 
-header p{
+header p {
+  color: rgb(255, 255, 255);
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1216px) {
+  header span {
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  header p {
     color: rgb(255, 255, 255);
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1063px) {
+  header span {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header p {
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  header span {
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header p {
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  header span {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header p {
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    header p{
-        color: rgb(255, 255, 255);
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  header p {
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
-header h6{
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 0px;
+header h6 {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 0px;
 }
 
-header h1{
-    margin-bottom: 0px;
-    line-height: 0px;
-
+header h1 {
+  margin-bottom: 0px;
+  line-height: 0px;
 }
 .no-shadows {
-    box-shadow: none!important;
+  box-shadow: none !important;
 }
 
-
-
-
 .transparentBG {
-    background-color: rgba(0,0,0,0);
-  }
-
-
+  background-color: rgba(0, 0, 0, 0);
+}
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 .carousel {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 600px;
-    -webkit-perspective: 500px;
-    perspective: 500px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
 }
 
-
-
 .tabs .indicator {
-    background-color: greenyellow;
+  background-color: greenyellow;
 }
 
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
-    background-color: rgba(255, 255, 255, 0.2);
-    outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
 }
-
 
 .mvsection {
-    padding-left: 30px;
-    padding-right: 30px;
-
+  padding-left: 30px;
+  padding-right: 30px;
 }
-
 
 .tabs {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-
-
-.gallery-div{
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 100px;
-
+.gallery-div {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px;
 }
